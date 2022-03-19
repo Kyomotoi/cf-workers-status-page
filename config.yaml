@@ -41,7 +41,7 @@ monitors:
   - id: api-kyomotoi-moe
     name: api.kyomotoi.moe | HibiAPI Service
     description: 'HibiAPI Service. If it is down, please contact me: 0w0@kyomotoi.moe'
-    url: 'https://api.kyomotoi.moe/'
+    url: 'https://api.kyomotoi.moe/docs'
     method: GET
     expectStatus: 200
   
