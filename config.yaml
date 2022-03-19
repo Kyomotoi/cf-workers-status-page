@@ -15,25 +15,39 @@ settings:
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
-  - id: workers-cloudflare-com # unique identifier
-    name: workers.cloudflare.com
-    description: 'You write code. They handle the rest.' # default=empty
-    url: 'https://workers.cloudflare.com/' # URL to fetch
-    method: GET # default=GET
-    expectStatus: 200 # operational status, default=200
-    followRedirect: false # should fetch follow redirects, default=false
-    linkable: false # allows the title to be a link, default=true
+  # - id: workers-cloudflare-com # unique identifier
+  #   name: workers.cloudflare.com
+  #   description: 'You write code. They handle the rest.' # default=empty
+  #   url: 'https://workers.cloudflare.com/' # URL to fetch
+  #   method: GET # default=GET
+  #   expectStatus: 200 # operational status, default=200
+  #   followRedirect: false # should fetch follow redirects, default=false
+  #   linkable: false # allows the title to be a link, default=true
 
-  - id: www-cloudflare-com
-    name: www.cloudflare.com
-    description: 'Built for anything connected to the Internet.'
-    url: 'https://www.cloudflare.com'
+  - id: kyomotoi-moe
+    name: kyomotoi.moe | Home
+    description: 'The Index'
+    url: 'https://kyomotoi.moe/'
     method: GET
     expectStatus: 200
-    linkable: true # allows the title to be a link, default=true
-
-  - id: blog-cloudflare-com
-    name: The Cloudflare Blog
-    url: 'https://blog.cloudflare.com/'
+  
+  - id: blog-kyomotoi-moe
+    name: blog.kyomotoi.moe | Blog
+    description: 'The Blog'
+    url: 'https://blog.kyomotoi.moe/'
+    method: GET
+    expectStatus: 200
+  
+  - id: api-kyomotoi-moe
+    name: api.kyomotoi.moe | HibiAPI Service
+    description: 'HibiAPI Service. If it is down, please contact me: 0w0@kyomotoi.moe'
+    url: 'https://api.kyomotoi.moe/'
+    method: GET
+    expectStatus: 200
+  
+  - id: drive-kyomotoi-moe
+    name: drive.kyomotoi.moe | File Sharing
+    description: 'Resource site'
+    url: 'https://drive.kyomotoi.moe/'
     method: GET
     expectStatus: 200
