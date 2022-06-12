@@ -1,6 +1,6 @@
 settings:
   title: 'Status Page'
-  url: 'https://status.kyomotoi.moe' # used for Slack messages
+  url: 'https://stat.imki.moe' # used for Slack messages
   logo: logo-192x192.png # image in ./public/ folder
   daysInHistogram: 60 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
@@ -24,30 +24,30 @@ monitors:
   #   followRedirect: false # should fetch follow redirects, default=false
   #   linkable: false # allows the title to be a link, default=true
 
-  - id: kyomotoi-moe
-    name: kyomotoi.moe | Home
+  - id: imki-moe
+    name: imki.moe | Home
     description: 'The Index'
-    url: 'https://kyomotoi.moe/'
+    url: 'https://imki.moe/'
     method: GET
     expectStatus: 200
   
-  - id: blog-kyomotoi-moe
-    name: blog.kyomotoi.moe | Blog
+  - id: blog-imki-moe
+    name: blog.imki.moe | Blog
     description: 'The Blog'
-    url: 'https://blog.kyomotoi.moe/'
+    url: 'https://blog.imki.moe/'
     method: GET
     expectStatus: 200
   
-  - id: api-kyomotoi-moe
-    name: api.kyomotoi.moe | HibiAPI Service
-    description: 'HibiAPI Service. If it is down, please contact me: 0w0@kyomotoi.moe'
-    url: 'https://api.kyomotoi.moe/docs'
+  - id: api-imki-moe
+    name: api.imki.moe | HibiAPI Service
+    description: 'HibiAPI Service. If it is down, please contact me: 0w0@imki.moe'
+    url: 'https://api.imki.moe/docs'
     method: GET
     expectStatus: 200
   
-  - id: drive-kyomotoi-moe
-    name: drive.kyomotoi.moe | File Sharing
+  - id: drive-imki-moe
+    name: drive.imki.moe | File Sharing
     description: 'Resource site'
-    url: 'https://drive.kyomotoi.moe/'
+    url: 'https://drive.imki.moe/'
     method: GET
     expectStatus: 200
