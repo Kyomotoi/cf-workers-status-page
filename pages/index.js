@@ -101,7 +101,7 @@ export default function Index({ config, kvMonitors, kvMonitorsLastUpdate }) {
           </div>
           <div>
             <a
-              href="https://kyomotoi.moe/"
+              href="https://imki.moe/"
               target="_blank"
             >
               @Kyomotoi
